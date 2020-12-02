@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//取三位数的数
+			for(i = 100 ; i < 1000 ; i++){
+				//判断百位上的数
+				var bai = parseInt(i/100);
+				//判断十位上的数
+				var shi = parseInt((i-bai*100)/10);
+				//判断个位上的数
+				var ge = i % 10;
+				//判断i是否是水仙花数
+				if(bai*bai*bai + shi*shi*shi + ge*ge*ge == i){
+					console.log(i);
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
