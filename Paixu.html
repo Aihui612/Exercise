@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var num1 = +prompt("请输入第一个整数：");
+			var num2 = +prompt("请输入第二个整数：");
+			var num3 = +prompt("请输入第三个整数：");
+			if(num1 < num2 && num2 < num3){
+				//num3最大，比较num1和num2
+				if(num1 < num2){
+					alert(num1 + "," + num2 + "," + num3);
+				}else{
+					alert(num2 + "," + num1 + "," + num3);
+				}
+			}else if(num1 < num3 && num3 < num2){
+				//num2最大，比较num1和num3
+				if(num1 < num3){
+					alert(num1 + "," + num3 + "," + num2);
+				}else{
+					alert(num3 + "," + num1 + "," + num2);
+				}
+			}else{
+				num1最大,比较num2和num3
+				if(num2 < num3){
+					alert(num2 + "," + num3 + "," + num1);
+				}else{
+					alert(num3 + "," + num2 + "," + num1);
+				}
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
