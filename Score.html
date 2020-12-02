@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script type="text/javascript">
+			var score = prompt("请输入考试成绩（0~100）：")
+			if(score > 100 || score < 0 || isNaN(score)){
+				alert("拉出去枪毙五分钟！！！");
+			}else{
+				if(score == 100){
+					alert("奖励一台电脑");
+				}else if(score >= 80 && score <= 99){
+					alert("奖励一部手机");
+				}else if(score >= 60 && score < 80){
+					alert("奖励一本复习资料");
+				}else{
+					alert("胖揍一顿，以示惩戒");
+				}
+			}
+			
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
