@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/*
+			 * continue关键字可以用来跳过当次循环
+			 * continue默认只会对离它最近的循环起作用
+			 */
+			/*可以为循环语句创建一个label标签，来标识当前的循环
+			* label :循环语句
+			* 使用break语句时，可以在break后跟着一个label
+			*     这样break将会结束指定的循环，而不是最近的循环
+			*/
+			laber:
+			for(var i= 0;i < 5; i++){
+				for(var j=0; j < 5; j++){
+					if(j == 1){
+						continue laber;
+						}
+						console.log("--->"+j);
+				}
+				console.log("@--->"+i);
+			}
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
