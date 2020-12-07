@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			/*
+			 * 实参可以是任何数据类型，也可以是一个对象
+			 *   当我们的参数过多时，我们可以封装在一个对象中，然后通过对象传递
+			 */
+			/*
+             创建一个函数，在控制台中输出一个人的信息
+             可以输出 name  age  gender  address
+             */
+			function sayhello(obj){
+						   console.log("我是"+obj.name+",","今年我"+obj.age+"岁了,","我是一个"+obj.gender+"人,","我住在"+obj.address+"。");
+			}
+			// sayhello("孙悟空",18,"男","花果山");
+			var obj = {
+				name:"孙悟空",
+				age:18,
+				gender:"男",
+				address:"花果山"
+			};
+			sayhello(obj);
+			/*
+			 *实参可以是一个对象 ，也可以是一个函数
+			 */
+			function fun(a){
+				//console.log("a="+a);
+				a(obj);
+			}
+			fun(sayhello);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>

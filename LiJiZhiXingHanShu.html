@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title></title>
+		<script>
+			//函数对象 （）
+			/*
+			 *立即执行函数
+			  *   函数定义完，立即调用
+			  * 立即执行函数，往往只会执行一次
+			 */
+			//1.
+			(function(){
+				alert("我是幂名函数~");
+			})();
+			
+			//2.
+			(function(a,b){
+				console.log("a="+a);
+				console.log("b="+b);
+			})(123,456);
+		</script>
+	</head>
+	<body>
+	</body>
+</html>
